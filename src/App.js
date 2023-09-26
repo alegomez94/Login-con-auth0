@@ -1,17 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import { useAuth0 } from "@auth0/auth0-react";
-
+import LoginButton from './components/LoginButton';
+import LogoutButton from './components/Logout';
+import Profile from './components/Profile';
 
 function App() {
 
-  const { loginWithRedirect } = useAuth0();
+ 
 
   return (
     <div className="App">
-      <h1>application</h1>
-      <button onClick={() => loginWithRedirect()}>Login</button>
-    </div>
+      <h1>Registrarse</h1>
+      <LoginButton />
+      <LogoutButton />
+      <Profile />
+     </div>
   );
 }
 
